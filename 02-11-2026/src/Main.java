@@ -44,6 +44,43 @@ public class Main {
             ds[i].xuat();
         }
 
+        System.out.println("\nBAI 2 - DIEM 2D VA DIEM 3D");
+        System.out.println("\nDIEM 2D");
+
+        Diem2D diemA = new Diem2D(3, 4);
+        Diem2D diemB = new Diem2D(6, 8);
+
+        System.out.print("Diem A: ");
+        diemA.hienThi();
+
+        System.out.print("Diem B: ");
+        diemB.hienThi();
+
+        System.out.println(
+            "Khoang cach AB: " + diemA.tinhKhoangCach(diemB)
+        );
+
+        System.out.print("Diem doi xung cua A: ");
+        diemA.doiXung().hienThi();
+
+        System.out.println("\nDIEM 3D");
+
+        Diem3D diemC = new Diem3D(1, 2, 3);
+        Diem3D diemD = new Diem3D(4, 5, 6);
+
+        System.out.print("Diem C: ");
+        diemC.hienThi();
+
+        System.out.print("Diem D: ");
+        diemD.hienThi();
+
+        System.out.println(
+            "Khoang cach CD: " + diemC.tinhKhoangCach(diemD)
+        );
+
+        System.out.print("Diem doi xung cua C: ");
+        diemC.doiXung().hienThi();
+
         sc.close();
     }
 }
